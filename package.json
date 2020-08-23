@@ -1,0 +1,23 @@
+{
+  "name": "diycomponent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node example/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keep-run/DIYComponent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keep-run/DIYComponent/issues"
+  },
+  "homepage": "https://github.com/keep-run/DIYComponent#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

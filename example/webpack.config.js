@@ -26,7 +26,7 @@ function getEntry() {
 }
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: getEntry(),
   output: {
     path: path.join(__dirname, 'build'),

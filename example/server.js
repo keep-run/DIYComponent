@@ -22,17 +22,17 @@ function startServer(){
     },
   }
   const compiler = Webpack(webpackConfig)
-  compiler.run(err => {
-    if (err) {
-      console.log('build err', err)
-      process.exit(1)
-    }
-  })
-  // const server = new WebpackDevServer(compiler, devServer)
-
-  // server.listen(port, host, () => {
-  //   console.log(`Starting server on http://localhost:${port}`)
+  // compiler.run(err => {
+  //   if (err) {
+  //     console.log('build err', err)
+  //     process.exit(1)
+  //   }
   // })
+  const server = new WebpackDevServer(compiler, devServer)
+
+  server.listen(port, host, () => {
+    console.log(`Starting server on http://localhost:${port}`)
+  })
 }
 
 startServer()
