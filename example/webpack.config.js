@@ -21,13 +21,14 @@ function getEntry() {
     }
     return entries;
   }, {})
-  console.log('entry', entry)
+  // console.log('entry', entry)
   return entry
 }
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: getEntry(),
+  // entry: path.join(__dirname, 'example1/index.js'),
   output: {
     path: path.join(__dirname, 'build'),
     filename: '[name].js',
